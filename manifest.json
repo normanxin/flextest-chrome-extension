@@ -1,0 +1,7 @@
+{
+  "name": "Flextest",
+  "version": "1.0",
+  "description": "Extends the Developer Tools, adding a panel in which users can edit test steps and save it as JSON.",
+  "devtools_page": "./devtools/devtools.html",
+  "manifest_version": 2
+}
