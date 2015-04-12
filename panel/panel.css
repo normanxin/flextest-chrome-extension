@@ -1,0 +1,66 @@
+.flextest-btn {
+	margin-bottom: 10px;
+}
+
+.flextest-log {
+	font-family: monospace;
+	font-size: 14px;
+}
+
+.flextest-log.action-log {
+	height: 200px;
+	border: 1px solid black;
+	margin: 10px auto;
+	background-color: white;
+	position: relative;
+	padding-top: 30px;
+}
+
+.flextest-log  .action-table-wrapper {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.flextest-log table {
+	background-color: white;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.flextest-log table.action-table th,
+.flextest-log table.action-table td {
+
+    padding: 0 5px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.flextest-log table.action-table td + td {
+    border-left: 1px solid #ccc;
+}
+
+.flextest-log .action-table-header {
+	background-color: #D5ECFF;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+border-bottom: 1px solid black;
+}
+
+.flextest-log .th-inner {
+	position: absolute;
+	top: 0;
+	line-height: 30px;
+	text-align: left;
+	border-left: 1px solid black;
+	padding-left: 5px;
+	margin-left: -5px;
+}
+
+.flextest-log th.first .th-inner {
+    border-left: none;
+}
