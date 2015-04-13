@@ -1,15 +1,16 @@
 {
-  "name": "Flextest",
-  "version": "1.0",
-  "description": "Extends the Developer Tools, adding a panel in which users can edit test steps and save it as JSON.",
-  "background": {
-    "scripts": ["eventPage.js"],
-    "persistent": false
-  },
-  "devtools_page": "devtools/devtools.html",
-  "content_scripts": [{
-    "js": ["lib/jquery-2.1.3.js", "contentScript.js"],
-    "matches": ["http://*/*", "https://*/*"]
-  }],
-  "manifest_version": 2
+	"manifest_version": 2,
+	"name": "Flextest",
+	"version": "1.0",
+	"description": "Extends the Developer Tools, adding a panel in which users can edit test steps and save it as JSON.",
+	"background": {
+		"scripts": ["eventPage.js"],
+		"persistent": false
+	},
+	"devtools_page": "devtools/devtools.html",
+	"options_page": "panel/panel.html",
+	"content_scripts": [{
+		"js": ["lib/jquery-2.1.3.js", "contentScript.js"],
+		"matches": ["http://*/*", "https://*/*"]
+	}]
 }
